@@ -7,5 +7,5 @@
         include('./config/languages/ca.php');
         $_SESSION['text'] = $text;
     }
-    header('Location: ./view/home.php');
+    header('Location: ./view/login.php');
 ?>

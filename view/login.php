@@ -7,20 +7,23 @@
 <form action="../controller/login_controller.php" method="post">
     <div class="username">
         <label for="username"><?= $text["username"] ?></label>
-        <input type="text" id="username" name="usernameField">
+        <input type="text" id="username" name="username_field">
     </div>
 
     <div class="password">
         <label for="password"><?= $text["password"] ?></label>
-        <input type="password" id="password" name="passwordField">
+        <input type="password" id="password" name="password_field">
     </div>
 
     <div>
         <button type="submit"><?= $text["login"] ?></button>
-        <button  type="button" onclick="window.location.href='./singup.php'"><?= $text["singup"] ?></button>
+        <a href="./singup.php"><?= $text["singup"] ?></a>
     </div>
 
+
+
     <?php
+        var_dump($_SESSION['users']);
         if(!empty($_SESSION['login_error'])){
             if($_SESSION['login_error'] ){
                 echo $text['login_error'];
