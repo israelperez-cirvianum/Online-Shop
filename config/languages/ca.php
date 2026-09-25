@@ -26,7 +26,24 @@
         "singup_error_duplicated_username" => "Nom d'usuari no disponible",
         "singup_error_email_not_valid" => "El correu electrònic no és vàlid",
         "singup_error_pass_not_valid" => "La contrasenya no és vàlida. Ha de contenir 8 caràcters, números, majúscules, minúscules i símbols",
-        "singup_error_pass_not_match" => "Les contrasenyes no coincideixen"
+        "singup_error_pass_not_match" => "Les contrasenyes no coincideixen",
+
+        //Main
+
+            //Menu options
+
+        "products" => "Productes",
+
+                // subproducts options
+
+        "posters" => "Pòsters",
+        "figures" => "Figures",
+        "plushies" => "Peluixos",
+
+
+        "library" => "Llibreria",
+        "cards" => "Cartes",
+        "shopping_cart" => "El meu carro"
 
     ];
 

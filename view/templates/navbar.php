@@ -1,8 +1,101 @@
-<div class="container-fluid p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle">
-        <nav class="nav">
-            <a class="nav-link" href="./index.php">Exercise 1</a>
-            <a class="nav-link" href="./login.php">Exercise 2</a>
-            <a class="nav-link" href="#">Exercise 3</a>
-            <a class="nav-link" href="#">Exercise 4</a>
-    </nav>
-</div>
+<?php
+    $text = $_SESSION['text'];
+?>
+
+
+<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" style="font-family: 'Times New Roman', Times, serif;"> <ul class="navbar-nav d-flex flex-row w-100">
+    <!-- Productos -->
+    <li class="nav-item dropdown flex-fill text-start position-relative">
+        <a class="nav-link dropdown-toggle text-light"
+           href="#"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            <?= $text['products']; ?>
+        </a>
+
+        <ul class="dropdown-menu dropdown-menu-center position-absolute bg-white">
+            <li>
+                <a class="dropdown-item text-dark" href="#">aux</a>
+            </li>
+            <li>
+                <a class="dropdown-item text-dark" href="#">aux</a>
+            </li>
+            <li>
+                <a class="dropdown-item text-dark" href="#">aux</a>
+            </li>
+        </ul>
+    </li>
+
+    <!-- Biblioteca -->
+    <li class="nav-item dropdown flex-fill text-start position-relative">
+        <a class="nav-link dropdown-toggle text-light"
+           href="#"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            <?= $text['library']; ?>
+        </a>
+
+        <ul class="dropdown-menu dropdown-menu-center position-absolute bg-white">
+            <li>
+                <a class="dropdown-item text-dark" href="#">aux</a>
+            </li>
+            <li>
+                <a class="dropdown-item text-dark" href="#">aux</a>
+            </li>
+            <li>
+                <a class="dropdown-item text-dark" href="#">aux</a>
+            </li>
+        </ul>
+    </li>
+
+    <!-- Cartas -->
+    <li class="nav-item dropdown flex-fill text-start position-relative">
+        <a class="nav-link dropdown-toggle text-light"
+           href="#"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            <?= $text['cards']; ?>
+        </a>
+
+        <ul class="dropdown-menu dropdown-menu-center position-absolute bg-white">
+            <li>
+                <a class="dropdown-item text-dark" href="#">aux</a>
+            </li>
+            <li>
+                <a class="dropdown-item text-dark" href="#">aux</a>
+            </li>
+            <li>
+                <a class="dropdown-item text-dark" href="#">aux</a>
+            </li>
+        </ul>
+    </li>
+
+    <!-- Carrito -->
+    <li class="nav-item dropdown flex-fill text-start position-relative">
+        <a class="nav-link dropdown-toggle text-light"
+           href="#"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            <?= $text['shopping_cart']; ?>
+        </a>
+
+        <ul class="dropdown-menu dropdown-menu-center position-absolute bg-white">
+            <li>
+                <a class="dropdown-item text-dark" href="#">aux</a>
+            </li>
+            <li>
+                <a class="dropdown-item text-dark" href="#">aux</a>
+            </li>
+            <li>
+                <a class="dropdown-item text-dark" href="#">aux</a>
+            </li>
+        </ul>
+    </li>
+
+</ul>
+
+</nav>
