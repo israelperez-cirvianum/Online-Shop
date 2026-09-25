@@ -6,7 +6,7 @@
     $_SESSION['singup_error'] = null;
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        if(isset($_POST['username_field'])){
+        if(isset($_POST['username_field']) && isset($_POST['name_field']) && isset($_POST['email_field']) && isset($_POST['password_field']) && isset($_POST['repeat_pass_field'])){
             $user_aux = exists_user($_POST['username_field'], $_SESSION['users']); // user_aux must be null to proceed. Error otherwise
             if($user_aux == null){ // username not exists
                 if(valid_field($_POST['email_field'], $_SESSION['REGEX_EMAIL'])){ // validate email

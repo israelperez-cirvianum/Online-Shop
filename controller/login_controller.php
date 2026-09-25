@@ -2,6 +2,7 @@
     session_start();
     $_SESSION['login_error'] = false;
     $_SESSION['actual_user'] = null;
+    $_SESSION['profile_picture'] = "../public/";
     require_once './functions/user_functions.php';
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         if(isset($_POST["username_field"])){
@@ -10,7 +11,9 @@
             if($user_aux != null){
                 if(password_verify($_POST['password_field'], $user_aux['password'])){
                     $_SESSION['actual_user'] = $user_aux;
+                    $_SESSION['profile_picture'] = $_SESSION['profile_picture'].$user_aux['profileImage'];
                     header('Location: ../view/home.php');
+
                     exit;
                 }
             }

@@ -43,7 +43,23 @@
 
         "library" => "Llibreria",
         "cards" => "Cartes",
-        "shopping_cart" => "El meu carro"
+        "shopping_cart" => "El meu carro",
+
+                // user options
+
+        "settings" => "Configuració",
+        "logout" => "Tancar sessió",
+
+        // Settings
+
+        "user_information" => "Informació d'usuari",
+        "change_username" => "Canviar el nom d'usuari",
+        "change_email" => "Canviar correu electrònic",
+        "change_name" => "Canviar el nom i cognom",
+        "change_profile_picture" => "Canviar imatge de perfil",
+
+        "save_changes" => "Guardar canvis",
+        "exit" => "Sortir"
 
     ];
 
